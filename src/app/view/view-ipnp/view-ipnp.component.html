@@ -1,0 +1,14 @@
+ <img src="images/LevBanner.jpg" width="100%">
+ <div  width="100%">
+ 	<span class="fullwidth">ניהול אדם פרטי: פרטי צד מעורב-פרטים אישיים</span>
+</div>
+
+<app-view-ipnpnavigator [navCurrentScreen] = "navCurrentScreen" (notify)="onNotify($event)"></app-view-ipnpnavigator>
+
+<ng-container *ngIf="selectedIPNPDetails">
+	<app-view-ipnpdetails [ip] = "ip" (notify)="onScreenNext($event)"></app-view-ipnpdetails>
+</ng-container>
+
+<ng-container *ngIf="selectedIPNPKYC1">
+	<app-view-ipnpkyc1 [ip] = "ip" (notify)="onScreenNext($event)"></app-view-ipnpkyc1>
+</ng-container>

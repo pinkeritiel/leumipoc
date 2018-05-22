@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+.levformarea {
+	border: 1px solid green ;
+    height: calc(80vh);
+}
+.headerarea {
+	height: calc(10vh);
+}
+.footerarea {
+	border-style: inset;
+	height: calc(24px);
+}
+.fullwidth {
+	width: calc(100vw);
+    background-color: lightblue;
+}

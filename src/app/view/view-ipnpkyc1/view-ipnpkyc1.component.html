@@ -1,0 +1,18 @@
+<div class=levformarea>
+
+<form #ipKYC1Form="ngForm">
+ 
+
+<div class="form-group">
+  <label for="postaddress" class="col-sm-2 col-form-label">כתובת</label>
+  	<div class="col-sm-10">
+  		<input type="text" class="form-control" id="postaddress"
+  		[(ngModel)]="ip.PostAddress" name="postaddress">
+	</div>
+</div>
+
+<button  type="button" class="btn btn-success" (click)="nextScreen()">המשך</button>
+<button  type="button" class="btn btn-failure" (click)="prevScreen()">חזור</button>
+</form>
+
+</div>
