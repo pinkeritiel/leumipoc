@@ -1,6 +1,6 @@
 .levformarea {
 	border: 1px solid green ;
-    height: calc(80vh);
+    height: calc(60vh);
 }
 .headerarea {
 	height: calc(10vh);
@@ -10,6 +10,6 @@
 	height: calc(24px);
 }
 .fullwidth {
-	width: calc(100vw);
+	width: calc(80vh);
     background-color: lightblue;
 }

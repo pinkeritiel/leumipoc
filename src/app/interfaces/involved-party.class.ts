@@ -29,9 +29,14 @@ EnglishFirstName: string;
 TaxCountries: ListOfTaxCountry[];
 PostAddress: string;
 ContactAddress: ListOfAddress[];
+PlaceOfId: string;
+OtherCitizenship: string;
+CountryOfBirth: string;
+IsUSPerson: string;
 constructor(IPType: string,IPId: string,Country: string,LastName: string,FirstName: string,DOB: string,MaritialStatus: string,
 			Gender: string,	NumChildren: string,EnglishLastName: string,EnglishFirstName: string,TaxCountries: ListOfTaxCountry[],
-			PostAddress: string,ContactAddress: ListOfAddress[]
+			PostAddress: string,ContactAddress: ListOfAddress[],PlaceOfId:string,OtherCitizenship: string,CountryOfBirth: string,
+			IsUSPerson: string
 	) {
 	this.IPType=IPType;
 	this.IPId=IPId;
@@ -47,6 +52,9 @@ constructor(IPType: string,IPId: string,Country: string,LastName: string,FirstNa
 	this.TaxCountries=TaxCountries;
 	this.PostAddress=PostAddress;
 	this.ContactAddress=ContactAddress;
-
+	this.PlaceOfId=PlaceOfId;
+	this.OtherCitizenship=OtherCitizenship;
+	this.CountryOfBirth=CountryOfBirth;
+	this.IsUSPerson=IsUSPerson;
     }
 }

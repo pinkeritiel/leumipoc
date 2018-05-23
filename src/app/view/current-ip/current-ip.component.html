@@ -1,0 +1,48 @@
+<div class="container-fluid">
+
+<form #ipCurremtForm="ngForm" >
+
+ 
+<fieldset style="border: solid 1px">
+  
+ <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+   <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
+      <label for="iptype" class="col-form-label">סוג זיהוי</label>
+      {{ip.IPType}}
+    </div>
+    
+    <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
+      <label for="ipid" class="col-form-label">מספר זיהוי</label>
+  		{{ip.IPId}} 
+     </div>  
+    
+
+    <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        <label for="country" class="col-form-label">ארץ דרכון</label>
+        	{{ip.Country}}
+     </div>
+</div>
+
+
+<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+     <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
+         <label for="lname" class="col-form-label input-sm">שם משפחה</label>
+        	{{ip.LastName}}	
+    </div>
+
+     <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
+    <label for="fname" class="col-form-label ">שם פרטי</label>
+  	{{ip.FirstName}}
+</div>
+
+   <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
+  <label for="dob" class="col-form-label">תאריך לידה</label>
+  	{{ip.DOB}}
+</div>
+</div>
+</fieldset>
+
+</form>
+
+</div>

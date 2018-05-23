@@ -17,7 +17,7 @@ export class ViewIpnpComponent implements OnInit {
   ngOnInit() {
   	this.selectedIPNPDetails = true;
 	this.selectedIPNPKYC1 = false;
-	this.ip = new InvolvedParty("","","","","","","","","","","",null,"",null);
+	this.ip = new InvolvedParty("","","","","","","","","","","",null,"",null,"","","","");
 	this.navCurrentScreen = 0;
   }
 

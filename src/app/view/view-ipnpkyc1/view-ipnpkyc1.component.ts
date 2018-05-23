@@ -9,7 +9,12 @@ import { InvolvedParty} from '../../interfaces/involved-party.class';
 export class ViewIpnpkyc1Component implements OnInit {
   @Input() ip: InvolvedParty;
   @Output() notify: EventEmitter<object> = new EventEmitter<object>();
+  
 
+  ListPlaceOfId = ['סניף','בקונסוליה','סניף אחר'];
+  ListOtherCitizenship = ['כן', 'לא'];
+  ListCountryOfBirth=['אוגנדה','אוזבקיסטן','אוסטריה'];
+  ListIsUSPerson= ['כן', 'לא'];
   ngOnInit() {
   }
   nextScreen(){

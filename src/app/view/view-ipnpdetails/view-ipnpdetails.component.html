@@ -4,7 +4,7 @@
 
  
 <fieldset style="border: solid 1px">
-  <legend style="width:inherit; padding:0 10px; border-bottom:none;">פרטי צד מעורב</legend>
+  
  <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 
@@ -12,7 +12,7 @@
    <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
       <label for="iptype" class="col-form-label">סוג זיהוי</label>
 
-        <select class="form-control" id="iptype" 
+        <select class="form-control input-sm" id="iptype" 
                         [(ngModel)]="ip.IPType" name="iptype">
           <option *ngFor="let idtype of idTypes" [value]="idtype">{{idtype}}</option>  
         </select>
@@ -22,7 +22,7 @@
     
     <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
       <label for="ipid" class="col-form-label">מספר זיהוי</label>
-  		      <input type="text" class="form-control" id="ipid"
+  		      <input type="text" class="form-control input-sm" id="ipid"
   		              [(ngModel)]="ip.IPId" name="ipid">
       
      </div>  
@@ -31,7 +31,7 @@
     <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
         <label for="country" class="col-form-label">ארץ דרכון</label>
 
-  		      <input type="text" class="form-control" id="country"
+  		      <input type="text" class="form-control input-sm" id="country"
   		        [(ngModel)]="ip.Country" name="country">
  
       
@@ -39,11 +39,11 @@
      </div>
      
 </div>
-</fieldset>
+
 
 <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
      <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
-         <label for="lname" class="col-form-label">שם משפחה</label>
+         <label for="lname" class="col-form-label input-sm">שם משפחה</label>
         	
       		<input type="text" class="form-control" id="lname"
         		[(ngModel)]="ip.LastName" name="lname">
@@ -52,9 +52,9 @@
     </div>
 
      <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
-    <label for="fname" class="col-form-label">שם פרטי</label>
+    <label for="fname" class="col-form-label ">שם פרטי</label>
   	
-  		<input type="text" class="form-control" id="fname"
+  		<input type="text" class="form-control input-sm" id="fname"
   		[(ngModel)]="ip.FirstName" name="fname">
 	  
     
@@ -63,12 +63,15 @@
    <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
   <label for="dob" class="col-form-label">תאריך לידה</label>
   	
-  		<input type="text" class="form-control" id="dob"
+  		<input type="text" class="form-control input-sm" id="dob"
   		[(ngModel)]="ip.DOB" name="dob">
 	
 
 </div>
 </div>
+</fieldset>
+<fieldset style="border: solid 1px">
+  <legend style="width:inherit; padding:0 10px; border-bottom:none;">פרטי צד מעורב</legend>
 <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
   <label for="maritalstatus" class="col-form-label">מצב  משפחתי</label>
@@ -83,7 +86,7 @@
   <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
   <label for="gender" class="col-form-label">מין</label>
   	
-  		  <select class="form-control" id="gender" 
+  		  <select class="form-control input-sm" id="gender" 
                          [(ngModel)]="ip.Gender" name="gender">
             <option *ngFor="let gender of genders" [value]="gender">{{gender}}</option>  
         </select>
@@ -94,7 +97,7 @@
   <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
       <label for="numchild" class="col-form-label">מספר ילדים</label>
       	
-  	   	<input type="text" class="form-control" id="numchild"
+  	   	<input type="text" class="form-control input-sm" id="numchild"
   		[(ngModel)]="ip.NumChildren" name="numchild">
 	
 
@@ -104,7 +107,7 @@
   <div class="form-group col-xs-6 col-sm-3 col-md-3 col-lg-3">
     <label for="ipid" class="col-form-label">שם פרטי באנגלית</label>
   	
-  		<input type="text" class="form-control" id="engLName"
+  		<input type="text" class="form-control input-sm" id="engLName"
   		[(ngModel)]="ip.EnglishLastName" name="engLName">
 	 
  
@@ -113,13 +116,13 @@
  <div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
     <label for="engFName" class="col-form-label">שם פרטי באנגלית</label>
   	 
-  	   	<input type="text" class="form-control" id="engFName"
+  	   	<input type="text" class="form-control input-sm" id="engFName"
   		    [(ngModel)]="ip.EnglishFirstName" name="engFName">
 	  
   
 </div>
 </div>
-
+</fieldset>
 
 <button  type="button" class="btn btn-success" (click)="nextScreen()">המשך</button>
 

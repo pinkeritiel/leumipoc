@@ -11,6 +11,7 @@ import { ViewIpnpComponent } from './view/view-ipnp/view-ipnp.component';
 import { ViewIpnpdetailsComponent } from './view/view-ipnpdetails/view-ipnpdetails.component';
 import { ViewIpnpkyc1Component } from './view/view-ipnpkyc1/view-ipnpkyc1.component';
 import { ViewIpnpnavigatorComponent } from './view/view-ipnpnavigator/view-ipnpnavigator.component';
+import { CurrentIpComponent } from './view/current-ip/current-ip.component';
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home',component: HomepageComponent},
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     ViewIpnpComponent,
     ViewIpnpdetailsComponent,
     ViewIpnpkyc1Component,
-    ViewIpnpnavigatorComponent
+    ViewIpnpnavigatorComponent,
+    CurrentIpComponent
   ],
   imports: [
     BrowserModule,
